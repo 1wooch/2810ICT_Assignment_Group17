@@ -1,0 +1,379 @@
+commit f024352e9b501bcc96cdbb3605ac82cf26b439ac
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 14:00:04 2022 +1000
+
+    Finalisation of document
+
+commit cf1ad610a9e3176c7b2ae2c352301ad1301ebd53
+Merge: ee9ab80 16a1678
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 13:47:22 2022 +1000
+
+    Formatting issues corrected
+
+commit ee9ab80bc5d6e898fb305ecda5913bb96063f9a2
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 13:45:04 2022 +1000
+
+    Formatting issues corrected
+
+commit 16a1678403bc973f07d33a33ca28774d8b2947a2
+Author: MarQuerz <110148216+MarQuerz@users.noreply.github.com>
+Date:   Sun Sep 4 13:37:47 2022 +1000
+
+    Update Software Design Document.docx
+    
+    Added to Detailed Design
+
+commit 50d0b7526ef326504b0c9609920ec370554aa416
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Sep 4 13:14:11 2022 +1000
+
+    fix some words on design
+
+commit 42986d81fad56735f3e55c60baf32d34b067e813
+Merge: 318fe09 6332cc2
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Sep 4 13:04:22 2022 +1000
+
+    design doc
+
+commit 318fe094067ece230d64c11a1d1783957b1092de
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Sep 4 13:03:22 2022 +1000
+
+    design doc
+
+commit 6332cc26868f78378a923fbc21e5b9566ae90c43
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 13:01:04 2022 +1000
+
+    Fixed grammatical errors of System Vision
+
+commit 2e75c7223371b63a6bf82550deea03a43c525d5f
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 12:15:30 2022 +1000
+
+    Added student numbers
+
+commit f3d033ee7ebc2781d4a5da8c31fe5b2eac7ceff0
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 12:14:03 2022 +1000
+
+    Added student numbers
+
+commit ce58cf6cb844d0f392c0a5e0912011bc1fc91c39
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 11:20:44 2022 +1000
+
+    General formatting and changed cover page
+
+commit cc49eab56165a7c2d3b3d3c3ecc4166d9800cf09
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 11:20:01 2022 +1000
+
+    General formatting
+
+commit 002d2085f40da679b20a53558eb2784d19435bd0
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 10:59:37 2022 +1000
+
+    Added original Gantt Chart file
+
+commit e5e2283cb0a562667c1ac7896a1a3721e203319b
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 10:56:35 2022 +1000
+
+    Added milestones and start/end date Gantt Chart
+
+commit 94efafaffff5b1d6cae63d38b26f11b88a4e9612
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sat Sep 3 01:51:20 2022 +1000
+
+    wwc
+
+commit 6f310c3a8f04f03b727426d4cb06cb81cc77915b
+Author: MarQuerz <110148216+MarQuerz@users.noreply.github.com>
+Date:   Fri Sep 2 09:26:38 2022 +1000
+
+    Added 3.1
+    
+    Added flow chart
+
+commit b7b479c24bd115328c5b65a139b7e6750865eff1
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Thu Sep 1 18:20:51 2022 +1000
+
+    finish use case
+
+commit 4f04db7a4f623ff242867c76e9ee66201c8468e1
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Wed Aug 31 00:48:58 2022 +1000
+
+    wwc done functional requirements
+
+commit 16a26fb271e98f8c040a309155aa184aa89e64f7
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 19:26:56 2022 +1000
+
+    wwc finish first part of software design documents
+
+commit ebb0c78f2e7f1055308898d814830f38b9962b19
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 18:32:53 2022 +1000
+
+    wwc
+
+commit 19a9b767576c7ce6ac12a91e2d478cc218e4a6b5
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 15:02:55 2022 +1000
+
+    wwc
+
+commit c3cbb35d65f37577815cabfba632eec65b3b348f
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 13:52:06 2022 +1000
+
+    wwc done design
+
+commit 8990f1e689d11e7a2a2305cb3313030820f144e0
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 12:14:59 2022 +1000
+
+    wwc add
+
+commit 9cae74f557a0bc7f4d0819adcc93b654397e2dbd
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Mon Aug 29 17:31:59 2022 +1000
+
+    wonwoo 2022-08-29
+
+commit 406a17aae66abc7f8db27d38b6852aaf29d01ae6
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Mon Aug 29 16:13:55 2022 +1000
+
+    Wonwoo
+
+commit d44080ff7d0dd8d36568beb5b4f87ba81e440a56
+Author: MarQuerz <110148216+MarQuerz@users.noreply.github.com>
+Date:   Mon Aug 29 13:59:03 2022 +1000
+
+    Update Software Design Document.docx
+    
+    Added some points to 2.2 Software Requirements
+
+commit 07136bc764df4285ee5910c3a10133231bf22be6
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Aug 28 15:04:27 2022 +1000
+
+    Completed Table 1
+
+commit ebdb5699c36885e226778254ddb27a4ea765bab1
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Aug 28 14:01:44 2022 +1000
+
+    Added description of activities
+
+commit f219f5b758d5b7991bf878b73d011804b95dfbf0
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Aug 28 13:00:59 2022 +1000
+
+    Added activities to WBS
+
+commit 420943598dde3f5afd4bbf4175e9139170eafe95
+Author: MarQuerz <110148216+MarQuerz@users.noreply.github.com>
+Date:   Tue Aug 23 12:07:53 2022 +1000
+
+    Added 2.1 User Requirements
+
+commit 9ee7fc55404af2dfb6e63b7ba9bf45b9aa876142
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 17:17:27 2022 +1000
+
+    Notes for sections, to be addressed by rubric
+
+commit b4055589d01e883cbd24246ef382eaba9d620c91
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 17:14:09 2022 +1000
+
+    Updated PDM
+
+commit bd85011d48b6dcfec0984a626b1d09cd354b7154
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 16:47:37 2022 +1000
+
+    Text added for 3.0 Activity Definitions
+
+commit 23f9eddb55d6d8722d110d6495805d2729b9c2db
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 16:25:56 2022 +1000
+
+    Text added for 2.0 WBS
+
+commit f898621d36b79c1d91ba47ca2a14b5912359faa3
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 16:12:30 2022 +1000
+
+    Finalised 1.0
+
+commit 37fbbf2c40636f2450bdfe803879f83a8fdcf42a
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 14:29:32 2022 +1000
+
+    Changed cover page
+
+commit 9ce070517bf8d10dcb9bcab212be5f0a6a831630
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 14:16:38 2022 +1000
+
+    Formatting diagrams
+
+commit a5864829f4e3047f4d51e838e8a4e8f915234709
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 14:14:55 2022 +1000
+
+    Finalised Gantt Chart for Part A (not including milestones)
+
+commit c81fe365c1a9f914b3e7fdb1348039b10261848c
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 12:55:06 2022 +1000
+
+    Finalised PDM for Part A
+
+commit a88b36b9acaba8789fbe2c9526804162f0ba737c
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 11:06:39 2022 +1000
+
+    Updated PDM, started writing
+
+commit c42e38f718ac2df2a12b9544dac0a92965401887
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 16 19:45:21 2022 +1000
+
+    Updated Gantt Chart
+
+commit db22b4acddbc6f24eb78c315e1889aa98de7637d
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 16 19:44:04 2022 +1000
+
+    Updated PDM
+
+commit d012227cb53045b84f0962a17835518d784e408e
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 16 13:33:44 2022 +1000
+
+    Updated PDM
+
+commit 88582b46b63904ee0a5b5e9f7c6af0683e7d75c5
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 16 13:31:23 2022 +1000
+
+    Updated WBS
+
+commit 824572e1ea303b101299a7e76ff076cb93c21b16
+Author: Bree <briannemareebyer@mail.com>
+Date:   Mon Aug 15 17:01:22 2022 +1000
+
+    Started 4.0 Gantt Chart
+
+commit 78b24b608ff8d7e98afed13424f2250384cbbb62
+Author: Bree <briannemareebyer@mail.com>
+Date:   Mon Aug 15 16:59:47 2022 +1000
+
+    Updated PDM
+
+commit 32d9128c85ea510b3384b4c7dc5d8a8429aa4471
+Author: Bree <briannemareebyer@mail.com>
+Date:   Mon Aug 15 16:58:45 2022 +1000
+
+    Updated WBS
+
+commit 70bb6381d21540029439c8fd4607410af7db4dad
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sat Aug 13 14:28:22 2022 +1000
+
+    Updated PDM Diagram
+
+commit 92bfbfd77a18c9d723618e38362c9d239dbe0624
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sat Aug 13 13:17:50 2022 +1000
+
+    Started PDM Network Diagram in 3.0
+
+commit 175577c3617d3bfe1e0715cdaa818f787f02da0d
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sat Aug 13 11:54:36 2022 +1000
+
+    Updated 2.0 WBS
+
+commit ee02b74650f47e5bf704c68b214fba4f0c7cac9f
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sat Aug 13 11:34:46 2022 +1000
+
+    Completed 1.0 Introduction
+
+commit 2e27038d549f291bda3a7a25b4d41ff946e9009f
+Author: Bree <briannemareebyer@mail.com>
+Date:   Thu Aug 11 20:58:27 2022 +1000
+
+    Activity table for each deliverable added
+
+commit 243e2eb77bcc9520b7dd49fd2389679711fb9af2
+Author: Bree <briannemareebyer@mail.com>
+Date:   Thu Aug 11 19:45:13 2022 +1000
+
+    Initiation activities added
+
+commit e55686eed791fbb7807bf996fe724ea529a5e378
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 14:04:53 2022 +1000
+
+    Started 1.3 Document contents
+
+commit cb4518346ad9bcdc2e145b0588b220e1f3026f8d
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 13:54:51 2022 +1000
+
+    Added 1.2 Scope
+
+commit 8093db7a18d7caa7d5d21eabab1326d6824f795a
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 13:06:41 2022 +1000
+
+    Added 1.1 Background
+
+commit 961c235e0b26dbce1bf948e2a3b418c3303def0c
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 12:04:15 2022 +1000
+
+    Added student names and title
+
+commit d542947e703d8e753c4c2572abdef1328883c0c5
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 12:03:20 2022 +1000
+
+    Changed title
+
+commit d71612d0f6bbb5b42e9d735208db7a6fbafe97f7
+Author: Bree <briannemareebyer@mail.com>
+Date:   Thu Aug 4 20:10:39 2022 +1000
+
+    Added team members names
+
+commit e987b57725e3b24167711cc4c0233719e5f3031a
+Author: Bree <briannemareebyer@mail.com>
+Date:   Thu Aug 4 20:00:48 2022 +1000
+
+    Added WBS draft
+
+commit c7e08d9ebbeb912e78da41d724b0e8cd80915b2b
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 3 19:19:59 2022 +1000
+
+    Added name to Project Plan
+
+commit 8a97b0b0edb2ac697345db51fdc49b187bc49346
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 3 19:17:42 2022 +1000
+
+    Template Documentation
