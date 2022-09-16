@@ -1,16 +1,14 @@
 # import required libraries and packages
+import csv
 import sqlite3 as sql
 import pandas as pd
 
-# establish connection with traffic dataset
-con = sql.connect("memory")
-wb = pd.read_excel('penalty_data_set_2', sheet_name = None)
-cur = con.cursor
+# set max row display
+pd.options.display.max_rows = 2
 
-# create tables
-for table, df in dfs.items():
-    df.to_sql(table, db)
+# must have dataset saved in C drive to use
+dataset = pd.read_csv(r'C:\penalty_data_set.csv')
 
-# commit and close
-con.commit()
-con.close()
+print(dataset)
+
+
