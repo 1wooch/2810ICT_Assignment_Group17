@@ -78,8 +78,8 @@ class basic_function(object):
         line_graph=test_oop.draw_line_graph()
         double_line_graph=test_oop.draw_2_line_graph()
         pie_chart=test_oop.draw_pie_chart()
-    def camera_or_radar(self):
-        result=0
+    def camera_or_radar(self): #change into generate 2 plot 
+        result=0 
         camera_result={} #SPEED_CAMERA_IND #Camera recorded in block D
         radar_result={} #'Radar' -- section h=='Y'
         self.get_date_range()
