@@ -3,17 +3,16 @@ from tkinter import ttk
 import pandas as pd
 import tkinter as tk
 
+
 def filterTreeView(*args):
-    ItemsOnTreeView = myTree.get_children()
+    search = search_ent_var.get()
 
-    search = search_ent_var.get().capitalize()
+    myTree.delete(*myTree.get_children())
 
-    for eachItem in ItemsOnTreeView:
-        if search in myTree.item(eachItem)['values'][2]:
-            search_var = myTree.item(eachItem)['values']
-            myTree.delete(eachItem)
+    for item in data_rows:
+        if search in item[2]:
+            myTree.insert("", "end", values=item)
 
-            myTree.insert("", 0, value=search_var)
 
 root = Tk()
 root.title("NSW Traffic Penalty Data")
@@ -35,12 +34,13 @@ column = ['Financial Year', 'Month', 'Offence Code', 'Offence Description', 'Leg
           'Penalty Amount', 'Camera Offence', 'Camera Type', 'Camera Location', 'Camera Location Details', 'School Zone',
           'Speed Range', 'Speed Offence', 'Point to Point Offence', 'Red Light Camera Offence', 'Speed Camera Offence',
           'Seatbelt Offence', 'Mobile Phone Offence', 'Parking Offence', 'Criminal Infringement Notice Scheme Offence',
-          'Food Safety Offence', 'Non-Motor Vehicle Offence', 'Number of Penalty Notices', 'Total Value of Penalty Notices']
+          'Food Safety Offence', 'Non-Motor Vehicle Offence', 'Number of Penalty Notices',
+          'Total Value of Penalty Notices']
 data = pd.read_csv("penalty_data_set_2.csv")
 data_rows = data.to_numpy().tolist()
 myTree = ttk.Treeview(treeFrame, height=100, column=column)
 myTree.place(relheight=1, relwidth=1)
-myTree['show']='headings'
+myTree['show'] = 'headings'
 
 treescrolly = tk.Scrollbar(treeFrame, orient="vertical", command=myTree.yview)
 treescrollx = tk.Scrollbar(treeFrame, orient="horizontal", command=myTree.xview)
@@ -53,6 +53,6 @@ for each in column:
     myTree.heading(each, text=each.capitalize())
 
 for each in data_rows:
-    myTree.insert("", "end", values = each)
+    myTree.insert("", "end", values=each)
 
 root.mainloop()
