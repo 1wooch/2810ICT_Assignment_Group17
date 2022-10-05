@@ -2,6 +2,8 @@ from calendar import month
 from cgitb import reset
 from datetime import datetime
 from enum import unique
+from fileinput import filename
+from genericpath import isfile
 from itertools import count
 from operator import truediv
 from tracemalloc import start
@@ -11,6 +13,7 @@ import numpy as np
 import sys
 from draw_graph import *
 import re
+import os.path
 
 
 class basic_function(object):
@@ -23,20 +26,16 @@ class basic_function(object):
         self.range_date=[]
         self.range_date_date_format=[]
         self.month_result={}
-
-
+        self.filename='data.csv'
+#inspired from https://stackoverflow.com/questions/5734438/how-to-create-a-month-iterator
     def get_date_range(self):
-        
-
-        #inspired from https://stackoverflow.com/questions/5734438/how-to-create-a-month-iterator
-
+       
         ym_start = 12*int(self.start_year)+int(self.start_month)-1
         ym_end = 12*int(self.end_year)+int(self.end_month)+1
         for ym in range(ym_start,ym_end):
             y,m=divmod(ym,12)
             self.range_date.append([y,m+1]) #year and month 
-            #type(int) -> convert into string?
-        #print(self.range_date)
+
 
         for i in range(len(self.range_date)):
             year=self.range_date[i][0]
@@ -46,8 +45,7 @@ class basic_function(object):
             date_change='01-'+month+'-'+year #type string
             date_change=datetime.strptime(date_change, '%d-%m-%Y').strftime('%d/%m/%Y')
             self.range_date_date_format.append(date_change)
-
-
+       
     def date_and_school(self):
         result=0
 
@@ -55,7 +53,7 @@ class basic_function(object):
 
 
 
-        data=pandas.read_csv('data.csv')
+        data=pandas.read_csv(self.filename)
         data['OFFENCE_MONTH']=pandas.to_datetime(data['OFFENCE_MONTH'])
 
         data=pd.DataFrame(data)
@@ -85,12 +83,12 @@ class basic_function(object):
         self.get_date_range()
     
 
-        data=pandas.read_csv('data.csv')
+        data=pandas.read_csv(self.filename)
         data['OFFENCE_MONTH']=pandas.to_datetime(data['OFFENCE_MONTH'])
         data=pd.DataFrame(data)
 
         
-
+        #------------------------------------------------------------------------------------------------------------------------
         #Camera found
         #------------------------------------------------------------------------------------------------------------------------
         if self.school_zone_bool==True:
@@ -169,8 +167,15 @@ class basic_function(object):
         test_oop=draw_graph(self.month_result)
         double_line_graph=test_oop.draw_pie_chart(test1,start_date,end_date)
 
-
-
+    def send_value_to_test(self):
+        endmonth=self.end_month
+        endyear=self.end_year
+        startmonth=self.start_month
+        startyear=self.start_year
+        schoolZone=self.school_zone_bool
+        filename=self.filename
+        return endmonth,endyear,startmonth,startyear,schoolZone,filename
+    
 
         #group by Offence_code
         #---------------------------------------------------------------------------------
@@ -184,11 +189,10 @@ class basic_function(object):
         #     print(offence_desc)
         #     final_result[offence_desc]=offence_code_value_5[i]
         # print(final_result.values())
-    def mobile_phone_usage(self):
-        print('something')
+    
+    
 
 start=basic_function('2012','01','2017','02',False)
 test = start.camera_or_radar()
-
-
+test2=start.send_value_to_test()
 #https://www.entechin.com/how-to-import-a-class-from-another-file-in-python/ -> how to use other file class in OOP
