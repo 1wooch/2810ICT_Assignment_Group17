@@ -35,7 +35,7 @@ class oop_main_test(unittest.TestCase):
     def test_range_date_date_test(self):
         #print(self.result_list['startmonth'])
         for i in range(len(self.rangedate)):
-            self.assertTrue(isinstance(self.rangedate[i],datetime.date))
+            self.assertTrue(isinstance(variable,datetime.datetime))
 if __name__=='__main__':
     unittest.main()
 
