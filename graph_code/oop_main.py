@@ -31,6 +31,7 @@ class basic_function(object):
     def check_input_value(self):
         if self.start_month.isdigit()==False:
             print("Start Month is wrong type")
+            
         elif self.start_year.isdigit()==False:
             print("Start year is wrong type")
         elif self.start_month.isdigit()==False:
@@ -52,7 +53,6 @@ class basic_function(object):
             data=pd.read_csv(filename)
             data['OFFENCE_MONTH']=pd.to_datetime(data['OFFENCE_MONTH'])
             data=pd.DataFrame(data)
-            print("type of data:  ",type(data))
             return data
         else:
             return "file not exist"
@@ -89,6 +89,9 @@ class basic_function(object):
             if self.range_date_date_format[j] is datetime.date==False:
                 break
                 return "range_date_date_fomat contain wrong type"
+            else:
+                return self.range_date_date_format
+
     def date_and_school(self):
         result=0
         self.check_input_value()
@@ -164,8 +167,7 @@ class basic_function(object):
                     if(re.search("-\sRadar",str(basic_data['OFFENCE_DESC'].iloc[j]))):
                         count+=1
                 radar_result[self.range_date_date_format[i]]=count
-        print(radar_result)
-        print(camera_result)
+
         #-------------------------------------------------------------------------------------------------------------------------
         test_oop=draw_graph(self.month_result)
         double_line_graph=test_oop.draw_2_line_graph(radar_result,camera_result)
@@ -229,7 +231,7 @@ class basic_function(object):
     
     
 
-start=basic_function('2012','01','2017','02',False)
-test = start.date_and_school()
+#start=basic_function('2012','01','2017','02',False)
+#test = start.date_and_school()
 #test2=start.test_operator()
 #https://www.entechin.com/how-to-import-a-class-from-another-file-in-python/ -> how to use other file class in OOP
