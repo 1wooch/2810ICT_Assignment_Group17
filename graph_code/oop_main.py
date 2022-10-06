@@ -11,10 +11,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
-from draw_graph import *
+from draw_graph_all import draw_graph
 import re
 import os.path
-
+#from oop_main_test import *
 
 class basic_function(object):
     def __init__(self,start_year,start_month,end_year,end_month,school_zone_bool):
@@ -28,8 +28,48 @@ class basic_function(object):
         self.month_result={}
         self.filename='data.csv'
 #inspired from https://stackoverflow.com/questions/5734438/how-to-create-a-month-iterator
+    def check_input_value(self):
+        if self.start_month.isdigit()==False:
+            print("Start Month is wrong type")
+        elif self.start_year.isdigit()==False:
+            print("Start year is wrong type")
+        elif self.start_month.isdigit()==False:
+            print("Start month is wrong type")
+        elif self.end_month.isdigit()==False:
+            print("end month is wrong type")
+        elif self.end_year.isdigit()==False:
+            print("end year is wrong type")
+        elif isinstance(self.school_zone_bool,bool)==False:
+            print("school zone value is wrong type")
+        elif os.path.isfile(self.filename)==False:
+            print("file doesn't exist")
+
+
+
+    def readDataFile(self,filename):
+        print(os.path.isfile(filename))
+        if os.path.isfile(filename):
+            data=pd.read_csv(filename)
+            data['OFFENCE_MONTH']=pd.to_datetime(data['OFFENCE_MONTH'])
+            data=pd.DataFrame(data)
+            print("type of data:  ",type(data))
+            return data
+        else:
+            return "file not exist"
+
+
+
+
     def get_date_range(self):
-       
+        if self.start_month.isdigit()==False:
+            return "Start Month is wrong"
+        elif self.start_year.isdigit()==False:
+            return "Start year is wrong"
+        elif self.end_month.isdigit()==False:
+            return "end Month is wrong"
+        elif self.end_year.isdigit()==False:
+            return "end year is wrong"
+        self.check_input_value()
         ym_start = 12*int(self.start_year)+int(self.start_month)-1
         ym_end = 12*int(self.end_year)+int(self.end_month)+1
         for ym in range(ym_start,ym_end):
@@ -45,18 +85,15 @@ class basic_function(object):
             date_change='01-'+month+'-'+year #type string
             date_change=datetime.strptime(date_change, '%d-%m-%Y').strftime('%d/%m/%Y')
             self.range_date_date_format.append(date_change)
-       
+        for j in range(len(self.range_date_date_format)):
+            if self.range_date_date_format[j] is datetime.date==False:
+                break
+                return "range_date_date_fomat contain wrong type"
     def date_and_school(self):
         result=0
-
+        self.check_input_value()
         self.get_date_range()
-
-
-
-        data=pandas.read_csv(self.filename)
-        data['OFFENCE_MONTH']=pandas.to_datetime(data['OFFENCE_MONTH'])
-
-        data=pd.DataFrame(data)
+        data=self.readDataFile(self.filename)
         #print(data[data["OFFENCE_MONTH"]==self.range_date_date_format[0]].count())
         if self.school_zone_bool==True:
             for i in range(len(self.range_date_date_format)):
@@ -73,21 +110,18 @@ class basic_function(object):
 
         test_oop=draw_graph(self.month_result)
         bar_graph=test_oop.draw_bar_graph()
-        line_graph=test_oop.draw_line_graph()
-        double_line_graph=test_oop.draw_2_line_graph()
-        pie_chart=test_oop.draw_pie_chart()
+        #line_graph=test_oop.draw_line_graph()
+        #double_line_graph=test_oop.draw_2_line_graph()
+        #pie_chart=test_oop.draw_pie_chart()
+
     def camera_or_radar(self): #change into generate 2 plot 
         result=0 
         camera_result={} #SPEED_CAMERA_IND #Camera recorded in block D
         radar_result={} #'Radar' -- section h=='Y'
         self.get_date_range()
-    
+        data=self.readDataFile(self.filename)
+        self.check_input_value()
 
-        data=pandas.read_csv(self.filename)
-        data['OFFENCE_MONTH']=pandas.to_datetime(data['OFFENCE_MONTH'])
-        data=pd.DataFrame(data)
-
-        
         #------------------------------------------------------------------------------------------------------------------------
         #Camera found
         #------------------------------------------------------------------------------------------------------------------------
@@ -143,9 +177,9 @@ class basic_function(object):
         self.get_date_range()
         result={}
         final_result={}
-        data=pandas.read_csv('data.csv')
-        data['OFFENCE_MONTH']=pandas.to_datetime(data['OFFENCE_MONTH'])
-        data=pd.DataFrame(data)
+        data=self.readDataFile(self.filename)
+        self.check_input_value()
+
         unique_Offence_code=list(data['OFFENCE_CODE'].unique())
         
         start_date=self.range_date_date_format[0]
@@ -167,15 +201,18 @@ class basic_function(object):
         test_oop=draw_graph(self.month_result)
         double_line_graph=test_oop.draw_pie_chart(test1,start_date,end_date)
 
-    def send_value_to_test(self):
-        endmonth=self.end_month
-        endyear=self.end_year
-        startmonth=self.start_month
-        startyear=self.start_year
-        schoolZone=self.school_zone_bool
-        filename=self.filename
-        return endmonth,endyear,startmonth,startyear,schoolZone,filename
-    
+    # def test_operator(self):#MOCK
+    #     endmonth=self.end_month
+    #     endyear=self.end_year
+    #     startmonth=self.start_month
+    #     startyear=self.start_year
+    #     schoolZone=self.school_zone_bool
+    #     filename=self.filename
+    #     rangedate=self.range_date_date_format
+    #     result_list={'rangedate':rangedate,'startmonth':startmonth,'startyear':startyear,'endmonth':endmonth,'endyear':endyear,'schoolzone':schoolZone,'filename':filename}
+    #     test_oop=oop_main_test(result_list)
+    #     test_oop_print=test_oop   
+
 
         #group by Offence_code
         #---------------------------------------------------------------------------------
@@ -193,6 +230,6 @@ class basic_function(object):
     
 
 start=basic_function('2012','01','2017','02',False)
-test = start.camera_or_radar()
-test2=start.send_value_to_test()
+test = start.date_and_school()
+#test2=start.test_operator()
 #https://www.entechin.com/how-to-import-a-class-from-another-file-in-python/ -> how to use other file class in OOP
