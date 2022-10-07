@@ -91,7 +91,7 @@ class basic_function(object):
                     month=self.range_date_date_format[i]
                     count=pd.DataFrame(data[(data['OFFENCE_MONTH']==self.range_date_date_format[i])&(data['SCHOOL_ZONE_IND']=='Y')]).count()['OFFENCE_MONTH']
                     self.month_result[self.range_date_date_format[i]]=count
-                return self.month_result,start_date,end_date,'Traffic Panelty Record in School Zone'
+                return self.month_result,start_date,end_date,'Traffic Penelty Record in School Zone'
 
 
             else:
@@ -100,7 +100,7 @@ class basic_function(object):
                     count=pd.DataFrame(data[data['OFFENCE_MONTH']==month]).count()['OFFENCE_MONTH']
                     self.month_result[self.range_date_date_format[i]]=count
 
-                return self.month_result,start_date,end_date,'Traffic Panelty Record'
+                return self.month_result,start_date,end_date,'Traffic Penelty Record'
         
             #sort the dictionary
             #test_oop=draw_graph(self.month_result)
@@ -201,10 +201,12 @@ class basic_function(object):
    
     
 ##=============start oop_main.py================
-#start=basic_function('2012','01','2017','02',True)
+start=basic_function('2012','01','2017','02',True)
 #result = start.date_and_school() #running test
 ##===============start draw graph py
-#test_oop=draw_graph(start.month_result)
+data=start.date_and_school()
+test_oop=draw_graph(start.month_result)
+draw_bar=test_oop.draw_line_graph(data[1],data[2],data[3])
 ##===============================================
 ##====================set data for offence code
 #data=start.distribution_of_offence_code()

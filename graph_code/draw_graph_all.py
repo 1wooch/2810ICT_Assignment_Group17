@@ -21,29 +21,36 @@ class draw_graph(object):
         start_date=str(start_date)
         end_date=str(end_date)
         title=str(title)
-        plt.figure(figsize=(20,3))
+        plt.figure(figsize=(20,4))
         #width:20,height:3
         plt.title(label='%s \n From %s to %s' %(title,start_date,end_date) )
 
         plt.bar(range(len(self.month_result)),list(self.month_result.values()),align='center',width=0.3)
         #set width.
-        plt.xticks(range(len(self.month_result)),list(self.month_result.keys()))
+        plt.xticks(range(len(self.month_result)),list(self.month_result.keys()),rotation=45)
         plt.show()
+
+
     def draw_line_graph(self,start_date,end_date,title):
         start_date=str(start_date)
         end_date=str(end_date)
         title=str(title)
-        plt.figure(figsize=(20,3))  
+        plt.figure(figsize=(20,5))  
         plt.title(label='%s \n From %s to %s' %(title,start_date,end_date) )
 
         labels=np.array(list(self.month_result.keys())) #month
         y=np.array(list(self.month_result.values())) #data
         plt.plot(labels,y,linestyle='-',marker='o')
+        plt.xticks(rotation=45)
         plt.show()
+
+
     def draw_2_line_graph(self,first_data,second_data,start_date,end_date): #for radar or camera
         
         start_date=str(start_date)
         end_date=str(end_date)
+        plt.figure(figsize=(20,3))  
+
         plt.title(' Radar or Camera \n From %s to %s' %(start_date,end_date))
         labels=np.array(list(first_data.keys()))
         first_data=np.array(list(first_data.values())).astype(np.double)
@@ -54,7 +61,7 @@ class draw_graph(object):
         plt.show()
 
     def draw_pie_chart(self,result_dictionary,start_date,end_date,title):
-        explode = [0, 0, 0, 0.1, 0.3]
+        explode = [0, 0, 0, 0.1, 0.3] #pie chart distinguisher 
         start_date=str(start_date)
         end_date=str(end_date) 
         title=str(title)
