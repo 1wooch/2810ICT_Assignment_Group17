@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.oop_main">
+  <component name="RunManager" selected="Python.database">
     <configuration name="check database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="2810ICT_Assignment_Group17" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,8 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.oop_main" />
         <item itemvalue="Python.database" />
+        <item itemvalue="Python.oop_main" />
         <item itemvalue="Python.ui_test" />
         <item itemvalue="Python.search_function" />
         <item itemvalue="Python.check database" />

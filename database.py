@@ -61,7 +61,7 @@ class App(tkinter.Tk):
             column = 2, row = 0, columnspan=2, sticky = tkinter.E)
         self.filter_re.trace("w", self.tree_filter)
 
-        self.tree = ttk.Treeview(self, column = data_header, height=30)
+        self.tree = ttk.Treeview(self, column = data_header)
         scroll_x = ttk.Scrollbar(self, command = self.tree.xview, orient = tkinter.HORIZONTAL)
         scroll_x.grid(column = 0, row = 2, columnspan = 3, sticky = 'we')
         scroll_y = ttk.Scrollbar(self, command = self.tree.yview, orient = tkinter.VERTICAL)
@@ -75,7 +75,7 @@ class App(tkinter.Tk):
             command = lambda column = label: tree_sortby(self.tree, column))
             self.tree.column(label, width = tkFont.Font().measure(label.title()))
 
-        for row in data_rows:
+        for row in data_rows[:30]:
             self.tree.insert('', 'end', values = row)
 
         self.tree.grid(column=0, row=1, columnspan=3, sticky='nsew')
