@@ -20,7 +20,6 @@ class App(tkinter.Tk):
         children = list(self._detached) + list(self.tree.get_children())
         self._detached = set()
         self.filter_re.set('')
-        # enumerate so that order is preserved?
         for ix, item_id in enumerate(children):
             self.tree.reattach(item_id, '', ix)
 
@@ -46,7 +45,6 @@ class App(tkinter.Tk):
         self.resizable(True, True)
         self.minsize(200, 200)
 
-        # define layout
         self.columnconfigure(0, weight=0)
         self.columnconfigure(1, weight=1)
         self.columnconfigure(2, weight=0)
@@ -61,10 +59,9 @@ class App(tkinter.Tk):
             column = 1, row = 0, sticky='nsew')
         ttk.Button(self, text = 'Reset', command = self.tree_reset).grid(
             column = 2, row = 0, columnspan=2, sticky = tkinter.E)
-        # TODO, why can't we just repond to changes is the edit field?
         self.filter_re.trace("w", self.tree_filter)
 
-        self.tree = ttk.Treeview(self, column = data_header)
+        self.tree = ttk.Treeview(self, column = data_header, height=30)
         scroll_x = ttk.Scrollbar(self, command = self.tree.xview, orient = tkinter.HORIZONTAL)
         scroll_x.grid(column = 0, row = 2, columnspan = 3, sticky = 'we')
         scroll_y = ttk.Scrollbar(self, command = self.tree.yview, orient = tkinter.VERTICAL)
@@ -80,7 +77,6 @@ class App(tkinter.Tk):
 
         for row in data_rows:
             self.tree.insert('', 'end', values = row)
-            # TODO, expand each column to fit data
 
         self.tree.grid(column=0, row=1, columnspan=3, sticky='nsew')
 
