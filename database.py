@@ -1,16 +1,26 @@
+from email import header
 import tkinter
 import tkinter.font as tkFont
 from tkinter import TclError, ttk
 import pandas as pd
 
-data_header = ['Financial Year', 'Month', 'Offence Code', 'Offence Description', 'Legislation', 'Section Clause',
-          'Penalty Amount', 'Camera Offence', 'Camera Type', 'Camera Location', 'Camera Location Details', 'School Zone',
-          'Speed Range', 'Speed Offence', 'Point to Point Offence', 'Red Light Camera Offence', 'Speed Camera Offence',
-          'Seatbelt Offence', 'Mobile Phone Offence', 'Parking Offence', 'Criminal Infringement Notice Scheme Offence',
-          'Food Safety Offence', 'Non-Motor Vehicle Offence', 'Number of Penalty Notices',
-          'Total Value of Penalty Notices']
+# data_header = ['Financial Year', 'Month', 'Offence Code', 'Offence Description', 'Legislation', 'Section Clause',
+#           'Penalty Amount', 'Camera Offence', 'Camera Type', 'Camera Location', 'Camera Location Details', 'School Zone',
+#           'Speed Range', 'Speed Offence', 'Point to Point Offence', 'Red Light Camera Offence', 'Speed Camera Offence',
+#           'Seatbelt Offence', 'Mobile Phone Offence', 'Parking Offence', 'Criminal Infringement Notice Scheme Offence',
+#           'Food Safety Offence', 'Non-Motor Vehicle Offence', 'Number of Penalty Notices',
+#           'Total Value of Penalty Notices']
+
 data = pd.read_csv("penalty_data_set_2.csv")
-data_rows = data.to_numpy().tolist()
+data=pd.DataFrame(data)
+data_rows=data.to_numpy().tolist()
+data_header=data.columns.tolist()
+data_first_30=data_rows[0:30]
+print(data_first_30)
+# headers=data.columns.tolist() #=> replace data_header.
+# print(type(headers))
+# data=header
+# data_rows = data.to_numpy().tolist()
 
 class App(tkinter.Tk):
 
@@ -44,7 +54,7 @@ class App(tkinter.Tk):
         self.title('NSW Traffic Penalty Offences')
         self.geometry('200x200')
         self.resizable(True, True)
-        self.minsize(200, 200)
+        self.minsize(2000, 1000)
 
         # define layout
         self.columnconfigure(0, weight=0)
