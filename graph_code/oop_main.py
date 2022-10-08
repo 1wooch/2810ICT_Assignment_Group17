@@ -201,12 +201,12 @@ class basic_function(object):
    
     
 ##=============start oop_main.py================
-start=basic_function('2012','01','2017','02',True)
+#start=basic_function('2012','01','2017','02',True)
 #result = start.date_and_school() #running test
 ##===============start draw graph py
-data=start.date_and_school()
-test_oop=draw_graph(start.month_result)
-draw_bar=test_oop.draw_line_graph(data[1],data[2],data[3])
+#data=start.date_and_school()
+#test_oop=draw_graph(start.month_result)
+#draw_bar=test_oop.draw_line_graph(data[1],data[2],data[3])
 ##===============================================
 ##====================set data for offence code
 #data=start.distribution_of_offence_code()
