@@ -97,6 +97,7 @@ class basic_function(object):
             else:
                 for i in range(len(self.range_date_date_format)):
                     month=self.range_date_date_format[i]
+                    #print(month)
                     count=pd.DataFrame(data[data['OFFENCE_MONTH']==month]).count()['OFFENCE_MONTH']
                     self.month_result[self.range_date_date_format[i]]=count
 
