@@ -166,7 +166,12 @@ class basic_function(object):
             test_oop=draw_graph(self.month_result)
             start_date=self.range_date_date_format[0]
             end_date=self.range_date_date_format[-1]
-            double_line_graph=test_oop.draw_2_line_graph(radar_result,camera_result,start_date,end_date)
+            double_line_graph=test_oop.draw_2_line_graph(
+            radar_result,
+            camera_result,
+            start_date,
+            end_date,
+            self.school_zone_bool)
         else:
             return range_date
 
@@ -194,7 +199,7 @@ class basic_function(object):
                 test1=data.groupby('OFFENCE_DESC').size().sort_values(ascending=False) #if want offence code only then change 'OFFFENCE_DESC' into 'OFFENCE_CODE'
                 test1=test1.iloc[0:5].to_dict()
             test_oop=draw_graph(self.month_result)
-            #draw_pie_chart=test_oop.draw_pie_chart(test1,start_date,end_date,'Distribution of Offence Code')
+            draw_pie_chart=test_oop.draw_pie_chart(test1,start_date,end_date,'Distribution of Offence Code',self.school_zone_bool)
             return test1,start_date,end_date,'Distribution of Offence Code'
         else:
             return range_date
