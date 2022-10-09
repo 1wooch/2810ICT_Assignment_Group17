@@ -34,7 +34,7 @@ class SampleApp(tk.Tk):
         container.grid_columnconfigure(0, weight=1)
 
         self.frames = {}
-        for F in (StartPage, Mainpage, DNS,CameraORRadar,DistributionOFCode):
+        for F in (StartPage, Mainpage, DNS,CameraORRadar,DistributionOFCode,MobilePhoneUsage):
             page_name = F.__name__
             frame = F(parent=container, controller=self)
             self.frames[page_name] = frame
@@ -67,11 +67,14 @@ class StartPage(tk.Frame):
         button3 = tk.Button(self, text="Camera or Radar",
                             command=lambda: controller.show_frame("CameraORRadar")) 
         button4 = tk.Button(self, text="Distribution of Offence Code",
-                            command=lambda: controller.show_frame("DistributionOFCode"))           
+                            command=lambda: controller.show_frame("DistributionOFCode"))      
+        button5 = tk.Button(self, text="Panelty caused by MobilePhoneUsage ",
+                            command=lambda: controller.show_frame("MobilePhoneUsage"))        
         button1.pack()
         button2.pack()
         button3.pack()
         button4.pack()
+        button5.pack()
 
 
 class Mainpage(tk.Frame):
@@ -277,7 +280,7 @@ class DNS(tk.Frame):
             start=oop_main.basic_function(startYearvar.get(),startMonthvar.get(),endYearvar.get(),endMonthvar.get(),schoolZoneBool.get())
             oop_mainrangedate=start.date_and_school()
             draw_graph=draw_graph_all.draw_graph(start.month_result)
-            draw_bar=draw_graph.draw_bar_graph(oop_mainrangedate[1],oop_mainrangedate[2],oop_mainrangedate[3])
+            draw_bar=draw_graph.draw_bar_graph(oop_mainrangedate[1],oop_mainrangedate[2],oop_mainrangedate[3],oop_mainrangedate[4])
             
             #fig = Figure(figsize = (20, 5),dpi = 100)
             #labels=np.array(list(start.month_result.keys()))
@@ -658,7 +661,153 @@ class DistributionOFCode(tk.Frame):
         button = tk.Button(self, text="Go to the start page",
                            command=lambda: controller.show_frame("StartPage"))
         button.place(x=0, y=0)#grid(row=0,column=10)
-      
+
+class MobilePhoneUsage(tk.Frame):
+
+    def __init__(self, parent, controller):
+        tk.Frame.__init__(self, parent)
+        self.controller = controller
+        tk.Frame.__init__(self, parent)
+        self.controller = controller
+        label = tk.Label(self, text="This is Main page ", font=controller.title_font)
+        
+        
+        data = pd.read_csv("penalty_data_set_2.csv")
+        data['OFFENCE_MONTH']=pd.to_datetime(data['OFFENCE_MONTH'])
+
+        data=pd.DataFrame(data)
+        data_rows=data.to_numpy().tolist() 
+        data_header=data.columns.tolist() #get header
+        showing_data=data_rows[:30]
+        #+++++++++++++++++++++Get latest and oldest date+++++++++++++++++++++++++++++++++++++
+        latest_date=data['OFFENCE_MONTH'].max()
+        least_date=data['OFFENCE_MONTH'].min()
+        leastYear=2012
+        latestYear=2016
+        choosen_startYear=""
+        choosen_startMonth=""
+        choosen_endYear=""
+        choosen_endMonth=""
+
+
+
+
+
+
+
+        year_range=[] #-> add all of the year between oldest year to latest year on data set
+        for i in range(leastYear,latestYear+1):
+            year_range.append(i)
+        month_range=['1','2','3','4','5','6','7','8','9','10','11','12']
+        #========================================================================
+                
+        #self.winfo_geometry("2000x3000") #set size
+        resultTree=ttk.Treeview(self,colum=data_header)
+
+
+        def search():
+            start=oop_main.basic_function(startYearvar.get(),startMonthvar.get(),endYearvar.get(),endMonthvar.get(),schoolZoneBool.get())
+            oop_mainrangedate=start.MobileUsage()
+            draw_graph=draw_graph_all.draw_graph(oop_mainrangedate[0])
+            draw_bar=draw_graph.draw_bar_graph(oop_mainrangedate[1],oop_mainrangedate[2],oop_mainrangedate[3],oop_mainrangedate[4])
+
+            #print(oop_mainrangedate)
+            #draw_graph=draw_graph_all.draw_graph(start.month_result)
+            #draw_bar=draw_graph.draw_2_line_graph(oop_mainrangedate[0],oop_mainrangedate[1],oop_mainrangedate[2],oop_mainrangedate[3],schoolZoneBool.get())
+            
+            #fig = Figure(figsize = (20, 5),dpi = 100)
+            #labels=np.array(list(start.month_result.keys()))
+            #y=np.array(list(start.month_result.values()))
+
+            #ax1=fig.add_subplot(111)
+            #bar=FigureCanvasTkAgg(fig,self)
+            #bar.get_tk_widget().place(x=0, y=55) #position of graph
+            #labels.plot(kind='bar', legend=True, ax=ax1)
+
+
+        #generate title
+        title=tk.Label(self,text="Display all the data from  NSW report")
+
+        #generate dropdown box for year and month
+        #+++++++++++++++++++++++++Start Month, Year++++++++++++++++++++++++++++++
+        startYearLabel=tk.Label(self,text="Start Year: ")
+        startMonthLabel=tk.Label(self,text="Start Month: ")
+
+        startYearvar=StringVar()
+        startYearCombobox=ttk.Combobox(self,textvariable=startYearvar)
+        startYearCombobox['values']=year_range
+
+        startMonthvar=StringVar()
+        startMonthCombobox=ttk.Combobox(self,textvariable=startMonthvar)
+        startMonthCombobox['values']=month_range
+
+        #########################Stat date choose finish##############
+
+        #########################end date choose finish##############
+
+        endYearLabel=tk.Label(self,text="end Year: ")
+        endMonthLabel=tk.Label(self,text="end Month: ")
+
+        endYearvar=StringVar()
+        endYearCombobox=ttk.Combobox(self,textvariable=endYearvar)
+        endYearCombobox['values']=year_range
+        endMonthvar=StringVar()
+        endMonthCombobox=ttk.Combobox(self,textvariable=endMonthvar)
+        endMonthCombobox['values']=month_range
+
+
+
+
+        #########################end date choose finish##############
+
+
+        #==============================School Zone============================
+
+        schoolZoneBool=tk.BooleanVar()
+
+        schoolZoneCheckbox=tk.Checkbutton(self,text="School Zone",variable=schoolZoneBool,onvalue=True,offvalue=False)
+        #===============================School Zone End=============================
+
+
+
+
+
+
+        searchbutton=tk.Button(self,text="search",command=search)
+
+        #==========================Present List and show======================
+
+        
+
+
+        #===========================end=========================
+
+
+
+        #positioning =================================
+        width=self.winfo_screenmmwidth() #width of screen (page)
+
+        title.place(x=width/2, y=0)#grid(column=0, row=1,padx=1, pady=10)
+        startYearLabel.place(x=23, y=25)#grid(column=0,row=2,sticky='w',padx=1, pady=10)
+        #+x60
+        startYearCombobox.place(x=83, y=25)#grid(column=1, row=2,sticky='w',padx=1, pady=10) #column => x axis , row=>y axis
+        #+x 170
+        startMonthLabel.place(x=253, y=25)#grid(column=0,row=3,sticky='nsew')
+        startMonthCombobox.place(x=313, y=25)#grid(column=3, row=2,sticky='nsew')
+        
+        endYearLabel.place(x=483, y=25)#grid(column=4,row=2,sticky='w')
+        endYearCombobox.place(x=543, y=25)#grid(column=5,row=2,sticky='w')
+        
+        endMonthLabel.place(x=713, y=25)#grid(column=6,row=2,sticky='w')
+        endMonthCombobox.place(x=773, y=25)#grid(column=7,row=2,sticky='w')
+        
+        schoolZoneCheckbox.place(x=943, y=25)#grid(column=8,row=2,sticky='w')
+        searchbutton.place(x=1003, y=25)#grid(column=9,row=2,sticky='w')
+        #resultTree.place(x=0, y=55)#grid(column=0,row=4,columnspan=10,sticky='nsew')
+        button = tk.Button(self, text="Go to the start page",
+                           command=lambda: controller.show_frame("StartPage"))
+        button.place(x=0, y=0)#grid(row=0,column=10)
+
 if __name__ == "__main__":
     app = SampleApp()
     app.mainloop()

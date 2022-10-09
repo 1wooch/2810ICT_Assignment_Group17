@@ -17,13 +17,16 @@ class draw_graph(object):
         
         
     
-    def draw_bar_graph(self,start_date,end_date,title): #mobile phone , School Zone
+    def draw_bar_graph(self,start_date,end_date,title,schoolzone): #mobile phone , School Zone
         start_date=str(start_date)
         end_date=str(end_date)
         title=str(title)
         plt.figure(figsize=(20,4))
         #width:20,height:3
-        plt.title(label='%s \n From %s to %s' %(title,start_date,end_date) )
+        if schoolzone:
+            plt.title(label='%s \n From %s to %s in School Zone' %(title,start_date,end_date) )
+        else:
+            plt.title(label='%s \n From %s to %s' %(title,start_date,end_date) )
 
         plt.bar(range(len(self.month_result)),list(self.month_result.values()),align='center',width=0.3)
         #set width.

@@ -91,7 +91,7 @@ class basic_function(object):
                     month=self.range_date_date_format[i]
                     count=pd.DataFrame(data[(data['OFFENCE_MONTH']==self.range_date_date_format[i])&(data['SCHOOL_ZONE_IND']=='Y')]).count()['OFFENCE_MONTH']
                     self.month_result[self.range_date_date_format[i]]=count
-                return self.month_result,start_date,end_date,'Traffic Penelty Record in School Zone'
+                return self.month_result,start_date,end_date,'Traffic Penelty Record in School Zone',self.school_zone_bool
 
 
             else:
@@ -100,7 +100,8 @@ class basic_function(object):
                     count=pd.DataFrame(data[data['OFFENCE_MONTH']==month]).count()['OFFENCE_MONTH']
                     self.month_result[self.range_date_date_format[i]]=count
 
-                return self.month_result,start_date,end_date,'Traffic Penelty Record'
+            
+                return self.month_result,start_date,end_date,'Traffic Penelty Record',self.school_zone_bool
         
             #sort the dictionary
             #test_oop=draw_graph(self.month_result)
@@ -203,7 +204,44 @@ class basic_function(object):
             return test1,start_date,end_date,'Distribution of Offence Code'
         else:
             return range_date
-   
+    def MobileUsage(self): #change into generate 2 plot 
+        result=0 
+        Mobileresult={}
+        range_date = self.get_date_range()
+
+        data=self.readDataFile(self.filename) 
+        if(isinstance(range_date,list)):
+
+            #------------------------------------------------------------------------------------------------------------------------
+            #Camera found
+            #------------------------------------------------------------------------------------------------------------------------
+            if self.school_zone_bool==True:
+                for i in range(len(self.range_date_date_format)):
+                    count=0
+                    month=self.range_date_date_format[i]
+
+                    basic_data=pd.DataFrame(data[(data['OFFENCE_MONTH']==self.range_date_date_format[i])&(data['SCHOOL_ZONE_IND']=='Y')])
+                    for j in range(len(basic_data)):
+                        if(re.search("\smobile",str(basic_data['OFFENCE_DESC'].iloc[j]))):
+                            count+=1
+                    Mobileresult[self.range_date_date_format[i]]=count
+            else:
+                for i in range(len(self.range_date_date_format)):
+                    count=0
+                    month=self.range_date_date_format[i]
+                    basic_data=pd.DataFrame(data[(data['OFFENCE_MONTH']==self.range_date_date_format[i])])
+                    for j in range(len(basic_data)):
+                        if(re.search("\smobile",str(basic_data['OFFENCE_DESC'].iloc[j]))):
+                            count+=1
+                    Mobileresult[self.range_date_date_format[i]]=count
+            
+            test_oop=draw_graph(self.month_result)
+            start_date=self.range_date_date_format[0]
+            end_date=self.range_date_date_format[-1]
+            #bar_graph=test_oop.draw_bar_graph(result,start_date,end_date,,self.school_zone_bool)
+            return Mobileresult,start_date,end_date,'Mobile Phone Usage',self.school_zone_bool
+        else:
+            return range_date
     
 ##=============start oop_main.py================
 #start=basic_function('2012','01','2017','02',True)
