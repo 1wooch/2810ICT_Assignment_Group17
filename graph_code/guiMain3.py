@@ -57,7 +57,7 @@ class StartPage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
-        label = tk.Label(self, text="This is 2810 Assignment Page", font=controller.title_font)
+        label = tk.Label(self, text="2810 Assignment", font=controller.title_font)
         label.pack(side="top", fill="x", pady=10)
 
         button1 = tk.Button(self, text="Go to Main Page",
@@ -82,7 +82,7 @@ class Mainpage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
-        label = tk.Label(self, text="This is Main page ", font=controller.title_font)
+        label = tk.Label(self, text="Main page ", font=controller.title_font)
         
         data = pd.read_csv("penalty_data_set_2.csv")
         data['OFFENCE_MONTH']=pd.to_datetime(data['OFFENCE_MONTH'])
@@ -240,7 +240,7 @@ class DNS(tk.Frame):
         self.controller = controller
         tk.Frame.__init__(self, parent)
         self.controller = controller
-        label = tk.Label(self, text="This is Main page ", font=controller.title_font)
+        label = tk.Label(self, text="Date and School Zone page ", font=controller.title_font)
         
         
         data = pd.read_csv("penalty_data_set_2.csv")
@@ -383,7 +383,7 @@ class CameraORRadar(tk.Frame):
         self.controller = controller
         tk.Frame.__init__(self, parent)
         self.controller = controller
-        label = tk.Label(self, text="This is Main page ", font=controller.title_font)
+        label = tk.Label(self, text="Camera Or Radar ", font=controller.title_font)
         
         
         data = pd.read_csv("penalty_data_set_2.csv")
@@ -526,7 +526,7 @@ class DistributionOFCode(tk.Frame):
         self.controller = controller
         tk.Frame.__init__(self, parent)
         self.controller = controller
-        label = tk.Label(self, text="This is Main page ", font=controller.title_font)
+        label = tk.Label(self, text="Distribution of Code ", font=controller.title_font)
         
         
         data = pd.read_csv("penalty_data_set_2.csv")
@@ -669,7 +669,7 @@ class MobilePhoneUsage(tk.Frame):
         self.controller = controller
         tk.Frame.__init__(self, parent)
         self.controller = controller
-        label = tk.Label(self, text="This is Main page ", font=controller.title_font)
+        label = tk.Label(self, text="Mobile Phone Usage", font=controller.title_font)
         
         
         data = pd.read_csv("penalty_data_set_2.csv")
