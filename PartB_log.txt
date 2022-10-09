@@ -1,0 +1,806 @@
+commit e241e3eba9020f946e6f3dbe704651356dfc1b12
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Oct 9 20:55:05 2022 +1000
+
+    label fixed
+
+commit 0088c1afeb1c20ab8dcec049a156c55cbea0b859
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Oct 9 20:20:08 2022 +1000
+
+    testing
+
+commit 4de5f4adb0d84676548334a3b8176ea907b9ca99
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 19:06:42 2022 +1000
+
+    Finalised User Manual
+
+commit d21acbb19622323036de02b1d36710bca106ef96
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 18:57:53 2022 +1000
+
+    Completed Executive Summary
+
+commit b60fb07efd9cfb8ae2db071e963c94f10d04a2a6
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 18:51:09 2022 +1000
+
+    Completed Introduction
+
+commit 77ca2bbdf03c22df2abb8f6f00258969ecaeb4d5
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 18:29:40 2022 +1000
+
+    Analysis 5 completed
+
+commit 5b8e6a02d78dcd64cd7cbd7ac9212f4a05bdd9c3
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 18:10:48 2022 +1000
+
+    Completed Analysis 34
+
+commit b46d3f47d9ab11be4951f36e014ab3bab2d18b7c
+Merge: d2506fd 7baee36
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Oct 9 17:36:43 2022 +1000
+
+    Merge branch 'main' of https://github.com/briannebyer/2810ICT_Assignment_Group17
+
+commit d2506fdb9c30036e98268a4f7b938a7e6dd6f088
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Oct 9 17:36:33 2022 +1000
+
+    mobile done
+
+commit 7baee36b1f2bfc0dcadcd30741184be16df99fc6
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 17:32:02 2022 +1000
+
+    Completed Analysis 3
+
+commit 86453be458ca0d18a9b0fff570037bc936c756f8
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 17:11:51 2022 +1000
+
+    Completed Analysis 2
+
+commit 76dd20e13aca2e3ef976a24f6272e58403582cc8
+Merge: a0418b2 b352c8d
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 16:47:08 2022 +1000
+
+    Merge branch 'main' of https://github.com/briannebyer/2810ICT_Assignment_Group17
+
+commit a0418b2445fe2e4c276b6348de0ca7ae9d5cf3ad
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 16:45:44 2022 +1000
+
+    Added mini dictionary for User Manual
+
+commit b352c8da66348f0032d49818ba0022210399a644
+Merge: 6fc4efd 300e227
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Oct 9 16:44:04 2022 +1000
+
+    Merge branch 'main' of https://github.com/briannebyer/2810ICT_Assignment_Group17
+
+commit 6fc4efda41f376e392e292c0f63e111773cff976
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Oct 9 16:43:49 2022 +1000
+
+    graph and Ui finish except mobile
+
+commit 300e227cd9b8e22a3be9f452d6d2d2e333d45478
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 16:41:21 2022 +1000
+
+    Completed Analysis 1
+
+commit af3310fea223eabb7792bc734bd5977f553b5e28
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 16:13:16 2022 +1000
+
+    Updated for GUI change, part 2
+
+commit bb3fab32b1a7c31be0feb87b7071a5430c1cdce9
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 15:56:31 2022 +1000
+
+    Updated for GUI change
+
+commit 5d0885c5e665ce93f01365cdb02bb03cad36d249
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 15:50:10 2022 +1000
+
+    Started Main Page
+
+commit 8f5147a5fa6fbc8958908c65929ef1436ace6d7d
+Merge: d929c82 aecf343
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Oct 9 15:45:33 2022 +1000
+
+    Merge branch 'main' of https://github.com/briannebyer/2810ICT_Assignment_Group17
+
+commit d929c82828e21aa82b79545b5fbd6fa79e31c9e6
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Oct 9 15:45:21 2022 +1000
+
+    gui work
+
+commit aecf3437da02e4b8381e26e7d54788893f96d605
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 15:35:29 2022 +1000
+
+    formatting for 3.0, will come back after Exec Summary
+
+commit 2344135612573b5e095d29af924f36564a6a056c
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 13:56:42 2022 +1000
+
+    started 3.0 Requirement Acceptance Testing
+
+commit 96df194dfc79871ef611dd54e15b06172680ee12
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 12:57:34 2022 +1000
+
+    added 2.0 Coverage Report
+
+commit 40f18a84ea32bb082a7efda040a390418f4dca1c
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 11:31:10 2022 +1000
+
+    Changed test code
+
+commit e2ab6ffe9bf4af94ff0b763a82493b5ef29e3ae9
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 11:30:36 2022 +1000
+
+    Completed 1.0 Unit Testing
+
+commit ae909bc2211c0705154fa8849d179dba60d88f04
+Merge: bc7f999 1b8fe60
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 09:44:18 2022 +1000
+
+    Merge branch 'main' of https://github.com/briannebyer/2810ICT_Assignment_Group17
+
+commit 1b8fe60a29c72d8069854c8ed5b46392d2bc26ed
+Author: MarQuerz <marco.querzola@griffithuni.edu.au>
+Date:   Sun Oct 9 09:43:03 2022 +1000
+
+    added oop_main.py to git
+
+commit bc7f99941967eaf61e788e53612437578115e718
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 09:42:24 2022 +1000
+
+    Completed User Manual
+
+commit 1150bad14c3ea25324dd3d18a378f33be738ff5c
+Author: MarQuerz <marco.querzola@griffithuni.edu.au>
+Date:   Sun Oct 9 09:41:15 2022 +1000
+
+    add guiMain/py to git
+
+commit a145498ec3808d85dab7a06a38db7325e009fa85
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 09:25:01 2022 +1000
+
+    added distribution of cases instructions
+
+commit 1b7366a166dcd6372c0e3ce567614392da38dfb4
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Sun Oct 9 09:05:53 2022 +1000
+
+    added purpose, target audience and main page text
+
+commit 268688c92094fd145be26146e74accb5d4475e13
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Oct 9 07:23:19 2022 +1000
+
+    doing marq's work
+
+commit 071ada3e3fa81216f2184a663f1158232dfe2033
+Merge: 2e6def5 891be96
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Fri Oct 7 23:38:42 2022 +1000
+
+    Merge branch 'main' of https://github.com/briannebyer/2810ICT_Assignment_Group17
+
+commit 2e6def5b7d2a208cd5860bf6fcde8e7d137c8fff
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Fri Oct 7 23:38:26 2022 +1000
+
+    fix getting data from csv
+
+commit 891be9644dd4c2bed2cb5a83c104cf2496f78e79
+Author: MarQuerz <marco.querzola@griffithuni.edu.au>
+Date:   Fri Oct 7 16:52:29 2022 +1000
+
+    changed code
+    
+    now only shows 30 entries
+
+commit a900c0af4c8a3a368311bdfb42b8084371e42e27
+Author: MarQuerz <marco.querzola@griffithuni.edu.au>
+Date:   Fri Oct 7 15:28:56 2022 +1000
+
+    updated code
+    
+    tried to limit number of results shown
+
+commit 3e9c706b89500b798925d1f7a5603c01bf12805f
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Fri Oct 7 13:54:11 2022 +1000
+
+    fix x axis for graph
+
+commit c8909ef7e398c5b2c7770615a44c34b38c3222b9
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Fri Oct 7 02:32:15 2022 +1000
+
+    massive change for graph code and testing result
+
+commit e9238fba48fbfa3b2575d8047f20b37aae5685ce
+Merge: 8556a7f fdd5323
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Thu Oct 6 18:50:40 2022 +1000
+
+    Merge branch 'main' of https://github.com/briannebyer/2810ICT_Assignment_Group17
+
+commit 8556a7f2eb2537f4813181a947f9151404fd65f5
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Thu Oct 6 18:50:26 2022 +1000
+
+    test code
+
+commit fdd53234710e4928bee88fd0f7785527f0cfe88a
+Author: MarQuerz <marco.querzola@griffithuni.edu.au>
+Date:   Thu Oct 6 17:55:58 2022 +1000
+
+    got searchbar working
+    
+    search bar working, but program is very laggy
+
+commit a7cb31ad07974cafd0e38f3b99bcd619e713fb76
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Thu Oct 6 15:12:10 2022 +1000
+
+    working on test wwc
+
+commit 8736d7f123e7f274f94c8f6b9600838822fad62d
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Wed Oct 5 17:25:43 2022 +1000
+
+    start testing
+
+commit a09b988ed6f494e5e1a8c03810397f1365c38701
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 13:03:16 2022 +1000
+
+    Added student information and structure of document
+
+commit 322a8f78c7f8699afee80c2c7e5993f5bbbcc237
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 12:53:31 2022 +1000
+
+    Added student information and Analysis titles
+
+commit 6654ef75ff519db7be7130cbb10ca2b7519af90d
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 12:44:31 2022 +1000
+
+    added student name and numbers
+
+commit 4e8a91b34ba802e5f3ae4739b284b5717f9c9829
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 11:20:28 2022 +1000
+
+    Completed update of Part A, according to Part B
+
+commit 4e77df886f7d192fd50450072543ceed697d77c7
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 11:13:26 2022 +1000
+
+    New WBS (changed according to Part B)
+
+commit a940e034593a06886aa2cf70658bc367b1671fee
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 11:01:38 2022 +1000
+
+    New Gantt Chart added (according to Part B)
+
+commit 563259b6bb441b11b71befb64df669069da425ce
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 10:58:00 2022 +1000
+
+    Updated Gantt Chart for Part B
+
+commit 2f044c81269a210cdb06d138e4346e3eaa46b9c5
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 10:38:41 2022 +1000
+
+    New PDM diagram added
+
+commit f78305b3396f409db8a8a3387465a95f44c791b4
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 10:32:51 2022 +1000
+
+    Added more detail to back-end and front-end activities
+
+commit af9e667aba50c2ad63793c8e4b5354e8b316a276
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Wed Oct 5 10:13:06 2022 +1000
+
+    Changed/added activities
+
+commit 12ca1363bdc26abd452c2daeed4e5d4683127d51
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Tue Oct 4 17:45:56 2022 +1000
+
+    Added User Manual to repo
+
+commit 4799caf458f356197b4c5fcf8fa5c3a82f2dc0c5
+Author: MarQuerz <marco.querzola@griffithuni.edu.au>
+Date:   Tue Oct 4 16:48:49 2022 +1000
+
+    tried to get searchbar working
+    
+    changed a bit of code, but still struggling to get search bar to work
+
+commit a7a3827bbac13e60ea851248cb5ad7ac5cf52352
+Author: MarQuerz <marco.querzola@griffithuni.edu.au>
+Date:   Mon Oct 3 14:13:38 2022 +1000
+
+    Updated UI
+    
+    changed the ui design and added a search bar
+
+commit 59a7356b5d1f1820e7494ea5801aef76b47b2af5
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Thu Sep 29 14:53:44 2022 +1000
+
+    change some code for graph
+
+commit 7d95c829b1e69dced7d98ee882a93a2289dc6a8f
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Thu Sep 29 14:29:38 2022 +1000
+
+    add graph generate code from wwc git
+
+commit b9c41503313796c71330a9d42716bb1089377dd8
+Author: MarQuerz <marco.querzola@griffithuni.edu.au>
+Date:   Thu Sep 29 12:25:26 2022 +1000
+
+    Started GUI
+    
+    Can load the csv file and view data
+
+commit f7e4036e9fb927bd7480a187229eae87b65b7041
+Author: MarQuerz <marco.querzola@griffithuni.edu.au>
+Date:   Thu Sep 29 10:08:07 2022 +1000
+
+    Added database to Git
+
+commit 56527b919d592e5bd4d81caccaeb455b80502016
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Fri Sep 16 10:32:02 2022 +1000
+
+    using pandas for dataset
+
+commit e28f70ab21b61dc42c86fee24e19fcf202962d2a
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Thu Sep 15 18:09:34 2022 +1000
+
+    removed dataset
+
+commit 148c9e31415c47fd0552e844a5196e97f8f1857f
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Thu Sep 15 18:03:42 2022 +1000
+
+    added dataset
+
+commit 00d07b25ca6a8f006c30f485f77cf341b8486cdf
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Tue Sep 13 14:47:42 2022 +1000
+
+    deleted dataset, size not recommended for repo
+
+commit 5ebd1d776f4f098021878d123454c2af4f7983f3
+Author: briannebyer <briannemareebyer@mail.com>
+Date:   Tue Sep 13 14:44:27 2022 +1000
+
+    added dataset
+
+commit fdbbccf118da775635720be5aee7047bdb0c1ad7
+Author: Bree <briannemareebyer@mail.com>
+Date:   Mon Sep 5 21:47:11 2022 +1000
+
+    Started backend - database
+
+commit 4b36466d19838363c348ce2d210320efe606d351
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 14:11:22 2022 +1000
+
+    Added git log records
+
+commit f024352e9b501bcc96cdbb3605ac82cf26b439ac
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 14:00:04 2022 +1000
+
+    Finalisation of document
+
+commit cf1ad610a9e3176c7b2ae2c352301ad1301ebd53
+Merge: ee9ab80 16a1678
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 13:47:22 2022 +1000
+
+    Formatting issues corrected
+
+commit ee9ab80bc5d6e898fb305ecda5913bb96063f9a2
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 13:45:04 2022 +1000
+
+    Formatting issues corrected
+
+commit 16a1678403bc973f07d33a33ca28774d8b2947a2
+Author: MarQuerz <110148216+MarQuerz@users.noreply.github.com>
+Date:   Sun Sep 4 13:37:47 2022 +1000
+
+    Update Software Design Document.docx
+    
+    Added to Detailed Design
+
+commit 50d0b7526ef326504b0c9609920ec370554aa416
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Sep 4 13:14:11 2022 +1000
+
+    fix some words on design
+
+commit 42986d81fad56735f3e55c60baf32d34b067e813
+Merge: 318fe09 6332cc2
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Sep 4 13:04:22 2022 +1000
+
+    design doc
+
+commit 318fe094067ece230d64c11a1d1783957b1092de
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sun Sep 4 13:03:22 2022 +1000
+
+    design doc
+
+commit 6332cc26868f78378a923fbc21e5b9566ae90c43
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 13:01:04 2022 +1000
+
+    Fixed grammatical errors of System Vision
+
+commit 2e75c7223371b63a6bf82550deea03a43c525d5f
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 12:15:30 2022 +1000
+
+    Added student numbers
+
+commit f3d033ee7ebc2781d4a5da8c31fe5b2eac7ceff0
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 12:14:03 2022 +1000
+
+    Added student numbers
+
+commit ce58cf6cb844d0f392c0a5e0912011bc1fc91c39
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 11:20:44 2022 +1000
+
+    General formatting and changed cover page
+
+commit cc49eab56165a7c2d3b3d3c3ecc4166d9800cf09
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 11:20:01 2022 +1000
+
+    General formatting
+
+commit 002d2085f40da679b20a53558eb2784d19435bd0
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 10:59:37 2022 +1000
+
+    Added original Gantt Chart file
+
+commit e5e2283cb0a562667c1ac7896a1a3721e203319b
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Sep 4 10:56:35 2022 +1000
+
+    Added milestones and start/end date Gantt Chart
+
+commit 94efafaffff5b1d6cae63d38b26f11b88a4e9612
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Sat Sep 3 01:51:20 2022 +1000
+
+    wwc
+
+commit 6f310c3a8f04f03b727426d4cb06cb81cc77915b
+Author: MarQuerz <110148216+MarQuerz@users.noreply.github.com>
+Date:   Fri Sep 2 09:26:38 2022 +1000
+
+    Added 3.1
+    
+    Added flow chart
+
+commit b7b479c24bd115328c5b65a139b7e6750865eff1
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Thu Sep 1 18:20:51 2022 +1000
+
+    finish use case
+
+commit 4f04db7a4f623ff242867c76e9ee66201c8468e1
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Wed Aug 31 00:48:58 2022 +1000
+
+    wwc done functional requirements
+
+commit 16a26fb271e98f8c040a309155aa184aa89e64f7
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 19:26:56 2022 +1000
+
+    wwc finish first part of software design documents
+
+commit ebb0c78f2e7f1055308898d814830f38b9962b19
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 18:32:53 2022 +1000
+
+    wwc
+
+commit 19a9b767576c7ce6ac12a91e2d478cc218e4a6b5
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 15:02:55 2022 +1000
+
+    wwc
+
+commit c3cbb35d65f37577815cabfba632eec65b3b348f
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 13:52:06 2022 +1000
+
+    wwc done design
+
+commit 8990f1e689d11e7a2a2305cb3313030820f144e0
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Tue Aug 30 12:14:59 2022 +1000
+
+    wwc add
+
+commit 9cae74f557a0bc7f4d0819adcc93b654397e2dbd
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Mon Aug 29 17:31:59 2022 +1000
+
+    wonwoo 2022-08-29
+
+commit 406a17aae66abc7f8db27d38b6852aaf29d01ae6
+Author: Wonwoo Choi <onechoo1106@gmail.com>
+Date:   Mon Aug 29 16:13:55 2022 +1000
+
+    Wonwoo
+
+commit d44080ff7d0dd8d36568beb5b4f87ba81e440a56
+Author: MarQuerz <110148216+MarQuerz@users.noreply.github.com>
+Date:   Mon Aug 29 13:59:03 2022 +1000
+
+    Update Software Design Document.docx
+    
+    Added some points to 2.2 Software Requirements
+
+commit 07136bc764df4285ee5910c3a10133231bf22be6
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Aug 28 15:04:27 2022 +1000
+
+    Completed Table 1
+
+commit ebdb5699c36885e226778254ddb27a4ea765bab1
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Aug 28 14:01:44 2022 +1000
+
+    Added description of activities
+
+commit f219f5b758d5b7991bf878b73d011804b95dfbf0
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sun Aug 28 13:00:59 2022 +1000
+
+    Added activities to WBS
+
+commit 420943598dde3f5afd4bbf4175e9139170eafe95
+Author: MarQuerz <110148216+MarQuerz@users.noreply.github.com>
+Date:   Tue Aug 23 12:07:53 2022 +1000
+
+    Added 2.1 User Requirements
+
+commit 9ee7fc55404af2dfb6e63b7ba9bf45b9aa876142
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 17:17:27 2022 +1000
+
+    Notes for sections, to be addressed by rubric
+
+commit b4055589d01e883cbd24246ef382eaba9d620c91
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 17:14:09 2022 +1000
+
+    Updated PDM
+
+commit bd85011d48b6dcfec0984a626b1d09cd354b7154
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 16:47:37 2022 +1000
+
+    Text added for 3.0 Activity Definitions
+
+commit 23f9eddb55d6d8722d110d6495805d2729b9c2db
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 16:25:56 2022 +1000
+
+    Text added for 2.0 WBS
+
+commit f898621d36b79c1d91ba47ca2a14b5912359faa3
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 16:12:30 2022 +1000
+
+    Finalised 1.0
+
+commit 37fbbf2c40636f2450bdfe803879f83a8fdcf42a
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 14:29:32 2022 +1000
+
+    Changed cover page
+
+commit 9ce070517bf8d10dcb9bcab212be5f0a6a831630
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 14:16:38 2022 +1000
+
+    Formatting diagrams
+
+commit a5864829f4e3047f4d51e838e8a4e8f915234709
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 14:14:55 2022 +1000
+
+    Finalised Gantt Chart for Part A (not including milestones)
+
+commit c81fe365c1a9f914b3e7fdb1348039b10261848c
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 12:55:06 2022 +1000
+
+    Finalised PDM for Part A
+
+commit a88b36b9acaba8789fbe2c9526804162f0ba737c
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 17 11:06:39 2022 +1000
+
+    Updated PDM, started writing
+
+commit c42e38f718ac2df2a12b9544dac0a92965401887
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 16 19:45:21 2022 +1000
+
+    Updated Gantt Chart
+
+commit db22b4acddbc6f24eb78c315e1889aa98de7637d
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 16 19:44:04 2022 +1000
+
+    Updated PDM
+
+commit d012227cb53045b84f0962a17835518d784e408e
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 16 13:33:44 2022 +1000
+
+    Updated PDM
+
+commit 88582b46b63904ee0a5b5e9f7c6af0683e7d75c5
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 16 13:31:23 2022 +1000
+
+    Updated WBS
+
+commit 824572e1ea303b101299a7e76ff076cb93c21b16
+Author: Bree <briannemareebyer@mail.com>
+Date:   Mon Aug 15 17:01:22 2022 +1000
+
+    Started 4.0 Gantt Chart
+
+commit 78b24b608ff8d7e98afed13424f2250384cbbb62
+Author: Bree <briannemareebyer@mail.com>
+Date:   Mon Aug 15 16:59:47 2022 +1000
+
+    Updated PDM
+
+commit 32d9128c85ea510b3384b4c7dc5d8a8429aa4471
+Author: Bree <briannemareebyer@mail.com>
+Date:   Mon Aug 15 16:58:45 2022 +1000
+
+    Updated WBS
+
+commit 70bb6381d21540029439c8fd4607410af7db4dad
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sat Aug 13 14:28:22 2022 +1000
+
+    Updated PDM Diagram
+
+commit 92bfbfd77a18c9d723618e38362c9d239dbe0624
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sat Aug 13 13:17:50 2022 +1000
+
+    Started PDM Network Diagram in 3.0
+
+commit 175577c3617d3bfe1e0715cdaa818f787f02da0d
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sat Aug 13 11:54:36 2022 +1000
+
+    Updated 2.0 WBS
+
+commit ee02b74650f47e5bf704c68b214fba4f0c7cac9f
+Author: Bree <briannemareebyer@mail.com>
+Date:   Sat Aug 13 11:34:46 2022 +1000
+
+    Completed 1.0 Introduction
+
+commit 2e27038d549f291bda3a7a25b4d41ff946e9009f
+Author: Bree <briannemareebyer@mail.com>
+Date:   Thu Aug 11 20:58:27 2022 +1000
+
+    Activity table for each deliverable added
+
+commit 243e2eb77bcc9520b7dd49fd2389679711fb9af2
+Author: Bree <briannemareebyer@mail.com>
+Date:   Thu Aug 11 19:45:13 2022 +1000
+
+    Initiation activities added
+
+commit e55686eed791fbb7807bf996fe724ea529a5e378
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 14:04:53 2022 +1000
+
+    Started 1.3 Document contents
+
+commit cb4518346ad9bcdc2e145b0588b220e1f3026f8d
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 13:54:51 2022 +1000
+
+    Added 1.2 Scope
+
+commit 8093db7a18d7caa7d5d21eabab1326d6824f795a
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 13:06:41 2022 +1000
+
+    Added 1.1 Background
+
+commit 961c235e0b26dbce1bf948e2a3b418c3303def0c
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 12:04:15 2022 +1000
+
+    Added student names and title
+
+commit d542947e703d8e753c4c2572abdef1328883c0c5
+Author: Bree <briannemareebyer@mail.com>
+Date:   Tue Aug 9 12:03:20 2022 +1000
+
+    Changed title
+
+commit d71612d0f6bbb5b42e9d735208db7a6fbafe97f7
+Author: Bree <briannemareebyer@mail.com>
+Date:   Thu Aug 4 20:10:39 2022 +1000
+
+    Added team members names
+
+commit e987b57725e3b24167711cc4c0233719e5f3031a
+Author: Bree <briannemareebyer@mail.com>
+Date:   Thu Aug 4 20:00:48 2022 +1000
+
+    Added WBS draft
+
+commit c7e08d9ebbeb912e78da41d724b0e8cd80915b2b
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 3 19:19:59 2022 +1000
+
+    Added name to Project Plan
+
+commit 8a97b0b0edb2ac697345db51fdc49b187bc49346
+Author: Bree <briannemareebyer@mail.com>
+Date:   Wed Aug 3 19:17:42 2022 +1000
+
+    Template Documentation
